@@ -22,7 +22,17 @@ document.getElementById('calculate_Button').addEventListener('click', function (
     console.log('food Expenses.........', clothesExpenses)
     console.log('total Expenses.........', totalExpenses)
     console.log('Balance.........', income)
+})
 
+// Bonus Aria
+document.getElementById('savingButton').addEventListener('click', function () {
+    const parcentInput = expenses('parcent_input');
+    const income = expenses('income');
+    const savingTotal = document.getElementById('saving_Amount').innerText = income * parcentInput / 100;
+    const balancee = document.getElementById('balance').innerText;
+    const subTotal = document.getElementById('subTotal').innerText = balancee - savingTotal;
+    // const subTotalNumber = subTotal.innerText
+    // subTotalNumber =
 
-
+    console.log('saving total', subTotal)
 })
