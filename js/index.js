@@ -1,4 +1,3 @@
-
 // Get exPenses Input common function
 function expenses(expenseId) {
     const exPensesInput = document.getElementById(expenseId);
@@ -13,17 +12,8 @@ document.getElementById('calculate_Button').addEventListener('click', function (
     const income = expenses('income');
     const totalExpenses = document.getElementById('expenses_Total').innerText = foodExpenses + rentExpenses + clothesExpenses;
     const balance = document.getElementById('balance').innerText = income - totalExpenses;
-    // const balanceText = balance.innerText;
-    // const balanceNumber = parseFloat(balanceText);
-    // balanceNumber = income - totalExpenses;
-    console.log('balance........', balance)
-    console.log('food Expenses.........', foodExpenses)
-    console.log('food Expenses.........', rentExpenses)
-    console.log('food Expenses.........', clothesExpenses)
-    console.log('total Expenses.........', totalExpenses)
-    console.log('Balance.........', income)
+    console.log('balance.........', balance)
 })
-
 // Bonus Aria
 document.getElementById('savingButton').addEventListener('click', function () {
     const parcentInput = expenses('parcent_input');
@@ -31,8 +21,4 @@ document.getElementById('savingButton').addEventListener('click', function () {
     const savingTotal = document.getElementById('saving_Amount').innerText = income * parcentInput / 100;
     const balancee = document.getElementById('balance').innerText;
     const subTotal = document.getElementById('subTotal').innerText = balancee - savingTotal;
-    // const subTotalNumber = subTotal.innerText
-    // subTotalNumber =
-
-    console.log('saving total', subTotal)
 })
