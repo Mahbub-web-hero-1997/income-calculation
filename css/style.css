@@ -1,0 +1,27 @@
+@media only screen and (max-width:668px) {
+    #header_Titel{
+        font-size: 30px;
+    }
+    #container_Width{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #total_Calculation{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #image_Aria{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #image_Aria img{
+        width: 100%;
+    }
+    #income_Aria{
+        width: 100%;
+    }
+}
