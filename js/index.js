@@ -12,9 +12,6 @@ document.getElementById('calculate_Button').addEventListener('click', function (
     const clothesExpenses = expenses('clothes_Expense');
     const income = expenses('income');
     let balance = 0;
-
-    // let totalExpenses = document.getElementById('expenses_Total').innerText = foodExpenses + rentExpenses + clothesExpenses;
-
     let expensesAmount = foodExpenses + rentExpenses + clothesExpenses;
     if (expensesAmount > income) {
         alert("You don't have enough money");
@@ -26,10 +23,7 @@ document.getElementById('calculate_Button').addEventListener('click', function (
     }
     if (income < 0 || foodExpenses < 0 || rentExpenses < 0 || clothesExpenses < 0) {
         alert('Please Enter Positive Value!')
-
     }
-
-
 })
 // Bonus Aria
 document.getElementById('savingButton').addEventListener('click', function () {
