@@ -14,7 +14,7 @@ document.getElementById('calculate_Button').addEventListener('click', function (
     let balance = 0;
     let expensesAmount = foodExpenses + rentExpenses + clothesExpenses;
     if (expensesAmount > income) {
-        alert("You don't have enough money");
+        alert("Plese Input Currect Value");
         balance = 0;
     }
     else {
