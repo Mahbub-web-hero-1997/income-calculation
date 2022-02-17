@@ -22,22 +22,24 @@
         <h1 id="header_Titel" class="display-3 fw-bold text-center text-white">Track your spending</h1>
     </header>
     <!-- main Aria -->
-    <main class=" my-5 ">
-        <section id="container_Width" class="container">
-            <div id="total_Calculation" class="d-flex flex-md-row justify-content-between  ">
-                <div id="image_Aria" class="  w-75 rounded me-5 ">
-                    <img class="img-fluid" src="images/image.jpg" alt="">
+    <main class="w-100 mx-auto">
+        <section id="container_Width" class="h-100 ">
+            <div id="total_Calculation"
+                class="d-flex flex-md-row flex-sm-column h-100 justify-content-sm-between mx-auto px-4">
+                <div id="image_Aria" class=" w-100 rounded me-5 h-100 ">
+                    <img class="" src="images/image.jpg" alt="" width="100%" height="100%">
                 </div>
-                <div id="income_Aria" class=" mx-5 py-0 w-75 mx-auto border border-2 pt-4  rounded ms-4 ">
+                <div id="income_Aria" class=" mx-5 w-100 mx-auto border border-2 p-5  rounded ms-sm-0 ">
                     <!-- income aria -->
-                    <div class="w-75 mx-auto text-center">
+                    <div class="w-100 mx-auto text-center">
                         <h5 class="text-center fs-3 mb-3">Income</h5>
-                        <div class="input-group mb-3 w-75">
-                            <span class="fs-5 fw-bold pe-4">Income:</span>
-                            <input id="income" type="input-group-text" class="form-control" placeholder="Income">
+                        <div class="input-group mb-3 w-100">
+                            <span class="d-sm-block fs-5 fw-bold pe-4">Income:</span>
+                            <input id="income" type="input-group-text" class="form-control d-sm-block"
+                                placeholder="Income">
                         </div>
                         <!-- Expance aria -->
-                        <div class="w-75">
+                        <div id="expenses" class="w-100 mx-auto">
                             <h5 class="text-center fs-3 mb-3 mx-auto">Expenses</h5>
                             <div class="input-group mb-3 ">
                                 <span class="fs-5 fw-bold pe-5">Food:</span>
@@ -56,7 +58,7 @@
                             </div>
                             <!-- Calculate Button -->
                             <div>
-                                <button class="btn btn-lg btn-primary text-white fw-bold mx-auto  w-75 me-0 d-block"
+                                <button class="btn btn-sm btn-primary text-white fw-bold mx-auto  w-100 me-0 d-block"
                                     id="calculate_Button">Calculate</button>
                             </div>
                             <!-- Total Expenses -->
@@ -69,16 +71,19 @@
                         </div>
                     </div>
                     <!-- bonus aria -->
-                    <div class="input-group mb-3 w-75 mx-auto mt-5">
-                        <span class="fs-5 fw-bold pe-4 mt-2">Clothes:</span>
-                        <input id="parcent_input" type="text" class="form-control rounded px-3" placeholder="Money"
-                            aria-label="Username">
-                        <span class="input-group-text fs-4 px-4 border border-0 bg-transparent">%</span>
-                        <button id="savingButton" class="btn btn-primary btn-lg px-5 rounded ">Save</button>
+                    <div id="save_Money">
+                        <div class="input-group mb-3 w-100 mx-auto mt-5">
+                            <span class="fs-5 fw-bold pe-4 mt-2">Save:</span>
+                            <input id="parcent_input" type="text" class="form-control rounded px-3 " placeholder="Money"
+                                aria-label="Username">
+                            <span id="parcent" class="input-group-text fs-4 border border-0 bg-transparent">%</span>
+                        </div>
+                        <button id="savingButton"
+                            class="btn btn-primary btn-lg px-5 rounded w-25 d-block mx-auto">Save</button>
                     </div>
                     <div class="mt-4">
-                        <h5 class="text-center fs-4 mb-3">Saving Amount: $<span id="saving_Amount">00</span></h5>
-                        <h5 class="text-center fs-4 mt-3">Remaining Balance: $<span id="subTotal">00</span></h5>
+                        <h5 class="text-center fs-4 mb-3">Saving Amount: <span id="saving_Amount">00</span></h5>
+                        <h5 class="text-center fs-4 mt-3">Remaining Balance: <span id="subTotal">00</span></h5>
                     </div>
 
                 </div>

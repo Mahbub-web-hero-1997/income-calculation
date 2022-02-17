@@ -1,27 +1,41 @@
-@media only screen and (max-width:668px) {
-    #header_Titel{
-        font-size: 30px;
-    }
-    #container_Width{
+/* body{
+    background: rgba(0, 0, 0, 0.609);
+    color:whitesmoke
+} */
+
+@media (max-width: 668px) {
+    header{
         width: 100%;
-        margin: 0;
-        padding: 0;
+    }
+    #header_Titel{
+        font-size: 35px;
+    }
+    main{
+        width: 100%;
+    }
+    .container_Width{
+        width: 100%;
+        height: 100vh;
     }
     #total_Calculation{
+    flex-direction: column;
+    }
+    #save_Money{
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
-    #image_Aria{
-        width: 100%;
-        margin: 0;
-        padding: 0;
+    #parcent{
+        display: none;
     }
-    #image_Aria img{
-        width: 100%;
+    #savingButton{
+        margin-top: 10px;
     }
-    #income_Aria{
-        width: 100%;
+    #saving_Amount{
+        display: block;
+        margin-top: 12px;
+    }
+    #subTotal{
+        display: block;
+        margin-top: 12px;
     }
 }
